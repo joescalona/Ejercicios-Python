@@ -7,8 +7,8 @@ def limpia():
     os.system("clear")
 
 print('***PIEDRA PAPEL O TIJERA***')
-nom1=input('ingresa el nombre del player 1 = ')
-nom2=input('ingresa el nombre del player 2 = ')
+nom1=raw_input('ingresa el nombre del player 1 = ')
+nom2=raw_input('ingresa el nombre del player 2 = ')
 
 list_nomb=[nom1,nom2]
 primerplayer=[random.choice(list_nomb)]
@@ -22,10 +22,10 @@ pp=primerplayer[0]
 sp=segundoplayer[0]
 
 print( pp + ' comienza')
-x=input('piedra, papel o tijera = ') 
+x=raw_input('piedra, papel o tijera = ') 
 limpia()
 print('Es turno de '+ sp)
-y=input('piedra, papel o tijera = ') 
+y=raw_input('piedra, papel o tijera = ') 
 limpia()
 
 def final(w,z):
