@@ -3,6 +3,12 @@
 #qpy:console
 
 import random 
+import os 
+
+def limpia(): #FUNCION QUE LIMPIA LA PANTALLA 
+    os.system('clear')
+
+limpiar()
 
 adivinar = random.randint(1,9) 
 #print (adivinar)
